@@ -1,0 +1,306 @@
+/* Amanda Foun
+ * Personal Website 
+ * May 2015
+ * main.css
+ */
+
+ /*** navigation bar ***/
+path {
+  stroke: #fff;
+  fill-rule: evenodd;
+}
+
+text {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.infovis {
+  padding-bottom: 2000px;
+}
+
+ * {
+    padding: 0;
+    border: 0;
+ }
+
+ body {
+  overflow-x: hidden;
+  margin-left: 0; /*These three lines were so helpful in making the footer span the whole width of the page*/
+  margin-bottom: 0;
+  margin-right: 0;
+  width:100%;
+ }
+
+.outer-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav {
+    max-width: 960px;
+    margin: 0 auto;
+} 
+
+nav {
+    position: fixed;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: .5%;
+    text-align: center; /* centers the nav bar */
+    border-bottom: 2px solid #ccc;
+    z-index: 999; /* bring to front */
+    background-color: white;
+    /* shadow on bottom of navigation bar */
+    -webkit-box-shadow: 0px 1px 4px rgba(100, 100, 100, 0.49);
+    -moz-box-shadow:    0px 1px 4px rgba(100, 100, 100, 0.49);
+    box-shadow:         0px 1px 4px rgba(100, 100, 100, 0.49);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5%; /* space between each button in nav bar */
+   /* border-right: 1px solid white;*/
+}
+
+nav a:hover {
+    color: gray;
+}
+
+nav li {
+    display: inline;
+}
+
+/*** initial screen ***/
+
+.index {
+
+
+    position: relative;
+    /*background: url("images/grey.jpeg") no-repeat; /*center fixed;*/
+   /* background-size:cover;*/
+   /* background: url("images/me3_edit2.jpg") no-repeat; /*center fixed;*/
+   background: url("images/me_color.jpg") no-repeat;
+   /* background-position: 30% 90%;*/
+    background-position: 30% 90%;
+    background-size: 1350px 950px;
+    margin-top: 20px;
+    display: block;
+    /*text-align: center; CENTERED TEXT */
+    padding-left: 70px; /* ADDED TO PUT TEXT ON LEFT*/
+    padding-top: 200px;
+    line-height: 90%; /* minimizes space between h1 and h2 */
+   /* padding-top: 150px; CENTERED TEXT 
+    padding-bottom: 20px;*/
+    min-height: 470px; /* set min height of main image of Amanda */
+    margin: 0 auto;
+    color: white;
+
+}
+
+
+/*.me {
+  display: block;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+.transbox h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 70px;
+    display: block;
+    padding-left: 30px;
+}
+
+.transbox h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-top:0;
+    padding-left: 130px;
+}
+
+.transbox
+{
+  margin-left: 80px;
+  margin-right: 600px;
+  background: rgba(0, 0, 0, 0.7); 
+  border: 1px solid black;
+  opacity:1;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  z-index: -1;
+}
+
+
+
+/*** headings ***/
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  color: #000000; /*black*/  
+  font-size: 50px;
+  font-weight: 300;
+  padding-left: 30px;
+  padding-bottom: 0;
+  background-size: 30px;
+  background-position: 10px 15px;
+}
+
+/*** content ***/
+.about p {
+  padding-right: 200px;
+
+}
+
+p {
+  font-family: 'Lora', serif; /* my name */
+  color: #000000; /*black*/ 
+  font-size: 18px; 
+  padding-left: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.project_text {
+  max-height: 200px;
+  width: 1300px;
+  display: inline-block;
+}
+
+.title {
+  font-family: 'Varela Round', sans-serif;
+  color: #000000; /*black*/ 
+  font-size: 18px; 
+  margin-bottom: 10px;
+}
+
+/*D3 sunburst chart */
+/*iframe {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 0;
+}*/
+
+.project_container a {
+  font-family: 'Varela Round', sans-serif;
+  color: #3366FF; /*blue*/ 
+  font-size: 15px; 
+  margin-top: 0px;
+  margin-left: 4%;
+}
+
+.solidline {
+    background-image:  url("images/grey.jpeg");
+    width:90%;
+    height:2px;
+    padding: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* the next three chunks make the two charts side by side*/
+
+.charts{
+  width: 1500px;
+  margin-bottom: 100px;
+}
+
+#barchart{
+    float: left;
+    width: 200px;
+    display: block;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#barchart2 {
+    padding-left: 700px;
+    width: 200px;
+    display: block;
+}
+
+.description {
+  font-family: 'Varela Round', sans-serif;
+  color: #000000; /*black*/ 
+  font-size: 15px; 
+  /*padding-right: 500px;*/
+  float: left;
+  height: 40px;
+  width: 700px;
+}
+
+.project_img {
+  /*background-image: url("study1.jpg");*/
+  position: relative;
+  background-repeat: no-repeat;
+  float: right;
+  padding-right: 50px;
+  top: -35px;
+  /*background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top:-10px;*/
+}
+
+.project_container {
+  width:100%;
+  max-height: 200px;
+  padding: .5%;
+}
+
+.contact_img {
+  float: left;
+  padding-left: 50px;
+  top: -35px;
+}
+
+
+footer {
+
+  margin-top: 220px;
+  background-color: black;
+  display: block;
+  overflow-x: hidden; /* gets rid of horizontal scrolling */
+
+
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  height: 170px;
+
+  left: 0;
+  right: 0;
+  padding-top: .5%;
+  text-align: center; 
+
+}  
+
+footer a {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding-right: 5px;
+}
+
+footer p {
+  padding-top: 55px;
+  font-size: 15px;
+  color: white;
+  padding-left: 10px;
+  text-align: center;
+}
+
+
+

@@ -1,0 +1,282 @@
+<!-- Amanda Foun
+ *   Personal Website 
+ *   May 2015
+ *   main.html
+ *-->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<title>Amanda Foun</title>
+		<!--these set the fav icon in the top-->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" type="text/css" href="text.css" media="screen">
+
+		<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> <!-- name font -->
+		<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script src="scripts.js"></script>		
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+		<!--BAR CHART-->
+  		<script type="text/javascript">
+  			google.load('visualization', '1', {packages: ['corechart', 'bar']});
+			google.setOnLoadCallback(drawBasic);
+
+			function drawBasic() {
+
+		      var dataTable = new google.visualization.DataTable();
+		        dataTable.addColumn('string', 'Language');
+		        dataTable.addColumn('number', 'Knowledge');
+		        // A column for custom tooltip content
+		        dataTable.addColumn({type: 'string', role: 'tooltip'});
+		        dataTable.addRows([
+		          ['Python', 85,'Very Proficient'],
+		          ['Java', 90, ' Very Proficient'],
+		          ['R', 30, 'Beginner'],
+		          ['HTML', 80, 'Proficient'],
+		          ['Javascript', 60, 'Familiar'],
+		          ['CSS', 80, 'Proficient'],
+		          
+		        ]);
+
+		      var options = {
+		        title: 'Technical Skills',
+		        colors: ['#4362fd'],
+		        legend: {position: 'none'},
+		        chartArea: {width: '50%'},
+		        vAxis: {
+				    gridlines: {color: 'transparent'}
+				},
+
+				hAxis: {
+				    
+				    minValue: 0,
+				    baselineColor: 'black',
+				    ticks:[0,50,100]
+				   // textStyle: {color: 'transparent'}
+				}
+		      };
+
+		      var chart = new google.visualization.BarChart(document.getElementById('barchart'));
+
+		      chart.draw(dataTable, options);
+		    }
+		</script>
+
+		<script type="text/javascript">
+  			google.load('visualization', '1', {packages: ['corechart']});
+			google.setOnLoadCallback(drawVisualization);
+
+			function drawVisualization() {
+			  // Create and populate the data table.
+			  var data = new google.visualization.DataTable();
+			  data.addColumn('string', 'Type');
+			  data.addColumn('number', 'Course');
+			  data.addColumn({type: 'string', role: 'tooltip'});
+			  data.addColumn('number', 'Course2');
+			  data.addColumn({type: 'string', role: 'tooltip'});
+			  data.addColumn('number', 'Course3');
+			  data.addColumn({type: 'string', role: 'tooltip'});
+			  data.addColumn('number', 'Course4');
+			  data.addColumn({type: 'string', role: 'tooltip'});
+
+			  data.addRows([
+			    ['Computer Science', 1, "Data Structures \n Spring '15", 1,  "Human Computer Interaction \n Spring '15", 1, "Algorithms \n Summer '15", 0, ""],
+			    ['Math', 1, "Multivariable Calculus \n Spring '14", 1, "Linear Algebra \n Fall '15", 1, "Probability and Statistics \n Fall '15", 1, "Graph Theory \n Spring '15"],
+			    ['Other', 1, "Microeconomicsc \n Fall '13", 1, "Macroeconomics \n Spring '14", 0, "", 0, ""]
+			  ]);
+
+
+			  
+			  // Create and draw the visualization.
+			  var chart = new google.visualization.BarChart(document.getElementById('barchart2')).
+			  draw(data,
+			       {title:"Courses",
+			        legend: {position: 'none'},
+			        isStacked: true,
+			        colors: ['#4362fd','#5571fd','#6881fd','#7b91fd'],
+			        width:600, height:400,
+			        vAxis: {title: ""},
+			        hAxis: {title: ""}}
+			      );
+
+					   
+
+					      chart.draw(data, options);
+					}    
+		</script>
+		
+
+
+	</head>
+	<body>
+		<div class = "outer-container">
+
+			<div class = "navbar">
+				<nav>
+					<ul>
+						<li><a href="#about">ABOUT ME</a></li>
+						<li><a href="#skills">SKILLS</a></li>
+						<li><a href="#projects">MY PROJECTS</a></li>
+						<li><a href="Foun_Technical_Resume.pdf" target="_blank">RESUME</a></li>
+						<li><a href="#contact">LET'S CONNECT</a></li>
+					</ul>
+				</nav>
+			</div> <!--navbar-->	
+
+			<div class ="index" id="index">
+				<div class = "transbox" id="transbox">
+					<h1 style="color:#FFF">AMANDA FOUN</h1>
+					<h2 style="color:#FFF">creator | coder | nutella fanatic</h2>
+					<!--<div class = "me">
+					<img src="images/me4.png" style="height:400px;width:300px;"> 
+					</div> <!--me-->
+				</div>
+			</div> <!--index-->
+
+			<!--ABOUT ME SECTION-->
+			<div class = "about" id="about">
+				<h3>ABOUT ME</h3>
+				<p>Welcome to my website! I'm Amanda Foun, a junior at Wellesley College majoring in computer science and minoring in math. I am interested in the intersection of education and technology, in particular, how we can get more young girls interested in computer science as a field and how we can use apps and websites to facilitate learning. Check out the Skills section below for a look at my skills set!</p>
+				
+				<p>When not coding for projects, or eating Nutella-infused treats, I enjoy doing yoga with my friends, playing my ukulele and going on runs outside. </p>
+
+				<br></br>
+				<br></br>
+				
+					<!--ADD THIS FOR D3 SUNBURST!!-->
+				<!--<iframe src="testd3withlabels.html" scrolling="no" style="height:600px;width:900px;">
+
+			</iframe>-->				
+			</div> <!--about-->
+
+			<!--SKILLS SECTION-->
+			<div class = "skills" id="skills">
+				<h3>WHAT DO I KNOW?</h3>
+					<p>The interactive graphs below were created with Google Charts. Hover over the different sections for more information!</p>
+					<div class="charts">
+						<div id="barchart" style="width:800px; height:400px;"></div>
+						<div id="barchart2" style="width: 700px; height: 400px;"></div>
+					</div>
+
+			</div> <!--skills-->
+
+
+			<!--MY PROJECTS SECTION-->
+			<div class = "projects" id="projects">
+				<h3>MY PROJECTS</h3>
+				
+				<div class = "solidline"></div> <!--solid line divides the projects-->	
+
+				<div class = "project_container">
+					<div class = "project_text">
+						<div class = "title"> 
+							<p><strong>Solitaire</strong> (CS230: Data Structures, final project, May 2015)</p>
+						</div> <!--title-->
+						<div class = "description"> 
+							<p>This version of Solitaire was inspired by and is very similar to the original popular card game. Some variations had to be made in order to deal with the constraints of Java's graphical user interface. For example, users must click on cards to move them instead of dragging them.</p> 
+
+							<a href="https://github.com/afoun7/SOLITAIRE_final-project-cs230" target="_blank">View on GitHub</a>
+
+						</div> <!--description-->
+				
+					<img class = "project_img" src="images/solitaire.png" style="height:210px;width:150px;">
+					</div> <!--project_text-->
+				</div> <!--project_container-->	
+				
+				<br></br>
+
+				<div class = "solidline"></div>
+				
+				<div class = "project_container">
+					<div class = "project_text">
+						<div class = "title"> 
+							<p><strong>StudySpot</strong> (CS220: Human Computer Interaction, final project, May 2015)</p> 
+						</div> <!--title-->
+						<div class = "description"> 
+							<p>StudySpot is a semi-functional prototype, with the front-end fully implemented, of an iPhone app that helps students at Wellesley College find the perfect study space based on their work preferences. In the process of creating this project, I learned a lot about Google Maps API, paper prototypes, and user testing and design. </p>
+
+							<a href="https://github.com/afoun7/StudySpot" target="_blank">View on GitHub</a>
+					
+						</div> <!--description-->
+					<img class = "project_img" src="images/study1.jpg" style="height:200px;width:110px;">
+					<img class = "project_img" src="images/study2.jpg" style="height:200px;width:110px;">
+					<img class = "project_img" src="images/study3.jpg" style="height:200px;width:110px;">
+					</div> <!--project_text-->
+				</div> <!--project_container-->	
+
+				<br></br>
+
+				<div class = "solidline"></div>
+
+				<div class = "project_container">
+					<div class = "project_text">
+						<div class = "title"> 
+							<p><strong>ThoughtCloud</strong> (1st Place Brandeis University Codestellation Hackathon, March 2015)</p> 
+						</div> <!--title-->
+						<div class = "description"> 
+							<p>ThoughtCloud is an interface that allows users to share how they're feeling using hashtags. After users submit their thoughts, the gradient background changes colors based on their input. </p> 
+
+							<a href="https://github.com/sunnyyy/ThoughtCloud" target="_blank">View on GitHub</a>
+
+						</div> <!--description-->
+					<img class = "project_img" src="images/thought.jpg" style="height:200px;width:400px;">
+					</div> <!--project_text-->
+				</div> <!--project_container-->	
+
+				<br></br>
+
+				<div class = "solidline"></div>
+
+				<div class = "project_container">
+					<div class = "project_text">
+						<div class = "title"> 
+							<p><strong>Jambalaya Text</strong> (CS111: Computer Programming, final project, May 2015)</p> 
+						</div> <!--title-->		
+						<div class = "description"> 
+							<p>Jamabalaya Text is a word game, written in Python, based on the computer game, TextTwist. Users are given a set of letters and they must try to rearrange all the letters to make as many words as they can. This is a timed (and fun!) game.</p> 
+
+							<a href="https://github.com/afoun7/JambalayaTextGame" target="_blank">View on GitHub</a>
+
+						</div> <!--description-->
+					<img class = "project_img" src="images/jambalaya.jpg" style="height:210px;width:210px;">
+					<img class = "project_img" src="images/jambalaya2.jpg" style="height:210px;width:210px;">
+					</div> <!--project_text-->
+				</div> <!--project_container-->	
+
+				<br></br>
+				<br></br>
+				<br></br>
+
+			<!--CONTACT ME SECTION-->
+			<div class = "contact" id="contact">
+				<h3>CONTACT ME</h3>
+				<p>There are few things in life that I enjoy more than meeting new people. Click below, and let's connect!</p>
+
+				<a href="https://github.com/afoun7" target="_blank"><img class ="contact_img" src="images/git.png" style="height:80px;width:80px;padding-top:10px;"></a>
+
+				<a href="mailto:afoun7@gmail.com"><img class ="contact_img" src="images/email.png" style="height:100px;width:100px;padding-right:0px;"></a>
+		
+				<a href="https://medium.com/@afoun7" target="_blank"><img class ="contact_img" src="images/medium.png" style="height:83px;width:83px;padding-top:7px;padding-right:5px;"></a>
+
+				<a href="https://www.linkedin.com/in/amandafoun" target="_blank"><img class ="contact_img" src="images/linkedin.png" style="height:95px;width:95px;padding-top:1px;"></a>
+
+			</div> <!--contact-->
+
+			<br></br>
+
+			<footer>
+				<a href="#index">TOP</a>
+				<p>Amanda Foun &copy; 2015</p>
+			
+			</footer> <!--footer-->
+		</div> <!--projects-->
+		</div> <!--outer-container-->	
+	</body>
+
+</html>

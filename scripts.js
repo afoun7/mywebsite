@@ -1,3 +1,4 @@
+//Amanda Foun
 // animated scroll
 $(document).ready(function(){
     $('a[href^="#"]').on('click',function (e) {

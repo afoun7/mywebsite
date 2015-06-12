@@ -104,7 +104,7 @@ nav li {
     font-weight: 300;
     font-size: 70px;
     display: block;
-    padding-left: 30px;
+    text-align: center;
 }
 
 .transbox h2 {
@@ -113,7 +113,7 @@ nav li {
     font-weight: 400;
     display: block;
     margin-top:0;
-    padding-left: 130px;
+    text-align: center;
 }
 
 .transbox

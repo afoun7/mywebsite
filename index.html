@@ -55,7 +55,7 @@
 				},
 
 				hAxis: {
-				    
+				    title: "Proficiency Level (these values are arbitrary)",
 				    minValue: 0,
 				    baselineColor: 'black',
 				    ticks:[0,50,100]
@@ -92,8 +92,6 @@
 			    ['Other', 1, "Microeconomicsc \n Fall '13", 1, "Macroeconomics \n Spring '14", 0, "", 0, ""]
 			  ]);
 
-
-			  
 			  // Create and draw the visualization.
 			  var chart = new google.visualization.BarChart(document.getElementById('barchart2')).
 			  draw(data,
@@ -104,7 +102,7 @@
 			        colors: ['#c6cffe','#a1b0fe','#7b91fd','#5571fd'],
 			        width:600, height:400,
 			        vAxis: {title: ""},
-			        hAxis: {title: ""}}
+			        hAxis: {title: "Number of Courses"}}
 			      );
 				chart.draw(data, options);
 				}    
@@ -133,17 +131,18 @@
 					<!--<div class = "me">
 					<img src="images/me4.png" style="height:400px;width:300px;"> 
 					</div> <!--me-->
-				</div>
+				</div> <!--transbox-->
 			</div> <!--index-->
 
 			<!--ABOUT ME SECTION-->
 			<div class = "about" id="about">
 				<h3>ABOUT ME</h3>
 				<p>Hi, I'm Amanda.</p> 
-				<p>I am junior at Wellesley College majoring in computer science and minoring in math. I am always eager to learn more, but I am most intrigued by the intersection of education and technology and the potential of the Internet of Things. I am enthusiastic about creating experiences for people. In particular, how can technology facilitate learning for students outside of the classroom? How can we bring intelligence to devices to fuel our day to day efficiency? There are a million questions to be asked, and I hope to use my skills and passion to answer some of them.</p>
+				<p>I am junior at Wellesley College majoring in computer science and minoring in math. I am always eager to learn more, but I am most intrigued by the intersection of education and technology and the potential of the Internet of Things. I am enthusiastic about creating experiences for people. In particular, how can technology facilitate learning for students outside of the classroom? How can we create intelligence devices to fuel our day to day efficiency? There are a million questions to be asked, and I hope to use my skills and passion to answer some of them.</p>
 				
 				<p>When I'm not coding and designing new projects, or eating chocolate-infused treats, you're likely to find me exploring nature, putting in miles for races or reading Jodi Picoult books. </p>
 
+				<br></br>
 				<br></br>
 				
 					<!--ADD THIS FOR D3 SUNBURST!!-->
@@ -162,6 +161,7 @@
 
 			</div> <!--skills-->
 
+			<br></br>
 
 			<!--MY PROJECTS SECTION-->
 			<div class = "projects" id="projects">
@@ -195,7 +195,7 @@
 							<p><strong>StudySpot</strong> (CS220: Human Computer Interaction, final project, May 2015)</p> 
 						</div> <!--title-->
 						<div class = "description"> 
-							<p>StudySpot is a semi-functional prototype, with the front-end fully implemented, of an iPhone app that helps students at Wellesley College find the perfect study space based on their work preferences. In the process of creating this project, I learned a lot about Google Maps API, paper prototypes, and user testing and design. </p>
+							<p>StudySpot is a semi-functional prototype, with the front-end fully implemented, of an iPhone app that helps students at Wellesley College find the perfect study space based on their work preferences. In the process of creating this project, I became familiar with Google Maps API, paper prototypes, and user testing and design. </p>
 
 							<a href="https://github.com/afoun7/StudySpot" target="_blank">View on GitHub</a>
 					
@@ -245,6 +245,8 @@
 					</div> <!--project_text-->
 				</div> <!--project_container-->	
 
+				<br></br>
+				<br></br>
 				<br></br>
 	
 

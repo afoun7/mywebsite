@@ -71,9 +71,13 @@ nav li {
     /*background: url("images/grey.jpeg") no-repeat; /*center fixed;*/
    /* background-size:cover;*/
    /* background: url("images/me3_edit2.jpg") no-repeat; /*center fixed;*/
-    background: url("images/me_color.jpg") no-repeat;
+    background: url("images/me_color.jpg") no-repeat; 
     background-position: 30% 90%;
-    background-size: 1350px 950px;
+    /*background-size: 1350px 950px;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin-top: 20px;
     display: block;
     /*text-align: center; CENTERED TEXT */
@@ -114,8 +118,8 @@ nav li {
 
 .transbox
 {
-  margin-left: 80px;
-  margin-right: 600px;
+  margin-left: 5%;
+  margin-right: 50%;
   background: rgba(0, 0, 0, 0.7); 
   border: 1px solid black;
   opacity:1;

@@ -94,16 +94,18 @@ nav li {
 }
 
 .transbox h1 {
+    position: relative;
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
-    font-size: 70px;
-    display: inline-block;
+    font-size: 4.5em;
+    display:block;
    
 }
 
 .transbox h2 {
+    position: relative;
     font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 400;
     display: inline-block;
     margin-top:0;
@@ -114,8 +116,10 @@ nav li {
 {
   position: absolute;
   text-align: center;
-  width:42%;
-  line-height: 90%; /* minimizes space between h1 and h2 */
+  width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;    /* Firefox/Gecko */
+  width: -webkit-max-content; /* Chrome */ 
+  line-height: 85%; /* minimizes space between h1 and h2 */
   margin-left: 8%;
   margin-right: 50%;
   top:35%; /*shifts box down*/

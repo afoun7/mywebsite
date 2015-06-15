@@ -97,22 +97,23 @@ nav li {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 70px;
-    display: block;
-    text-align: center;
+    display: inline-block;
+   
 }
 
 .transbox h2 {
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: 400;
-    display: block;
+    display: inline-block;
     margin-top:0;
-    text-align: center;
+    
 }
 
 .transbox
 {
   position: absolute;
+  text-align: center;
   width:42%;
   line-height: 90%; /* minimizes space between h1 and h2 */
   margin-left: 8%;

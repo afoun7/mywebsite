@@ -64,39 +64,95 @@ nav li {
     display: inline;
 }
 
+/*.index {
+    position: relative;
+   /* background: url("images/me3_edit2.jpg") no-repeat; /*center fixed;*/
+   /* background: url("images/me_color.jpg") no-repeat; 
+    background-position: 30% 90%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    margin-top: 20px;
+    display: block;
+    display:block;*/
+    /*text-align: center; CENTERED TEXT */
+ /* padding-top: 40%;
+    line-height: 90%; /* minimizes space between h1 and h2 */
+   /* padding-bottom: 20px;
+ /* min-height: auto; /*470px set min height of main image of Amanda */
+   /* margin: 0 auto;
+}*/
+
+.me{
+  position: relative;
+  background: url("images/me_color.jpg") no-repeat; 
+    background-position: 30% 90%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: block;
+ padding-top: 50%;
+   margin: 0 auto;
+}
+
+.transbox h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 70px;
+    display: block;
+    text-align: center;
+}
+
+.transbox h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-top:0;
+    text-align: center;
+}
+
+.transbox
+{
+  position: absolute;
+  width:42%;
+  line-height: 90%; /* minimizes space between h1 and h2 */
+  margin-left: 8%;
+  margin-right: 50%;
+  top:35%; /*shifts box down*/
+  background: rgba(0, 0, 0, 0.7); 
+  border: 1px solid black;
+  opacity:1;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  z-index: 5;
+}
+
 /*** initial screen ***/
 
+/*old index that had a background picture of me and my name in a box
 .index {
     position: relative;
     /*background: url("images/grey.jpeg") no-repeat; /*center fixed;*/
    /* background-size:cover;*/
-   /* background: url("images/me3_edit2.jpg") no-repeat; /*center fixed;*/
+   /* background: url("images/me3_edit2.jpg") no-repeat; /*center fixed;
     background: url("images/me_color.jpg") no-repeat; 
-    background-position: center bottom;
-    /*background-size: 1350px 950px;*/
+    background-position: 30% 90%;
+    /*background-size: 1350px 950px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    /*background-size: cover;*/
+    /*background-size: cover;
+    margin-top: 20px;
     display: block;
     /*text-align: center; CENTERED TEXT */
-    padding-top: 300px;
+   /* padding-top: 200px;
     line-height: 90%; /* minimizes space between h1 and h2 */
    /* padding-top: 150px; CENTERED TEXT 
     padding-bottom: 20px;*/
-    min-height: 400px; /* set min height of main image of Amanda */
-    margin: 0 auto;
+  /*  min-height: 470px; /* set min height of main image of Amanda */
+   /* margin: 0 auto;
     color: white;
-
 }
-
-
-/*.me {
-  display: block;
-  padding-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 
 .transbox h1 {
     font-family: 'Quicksand', sans-serif;
@@ -123,8 +179,8 @@ nav li {
   border: 1px solid black;
   opacity:1;
   filter:alpha(opacity=60); /* For IE8 and earlier */
-  z-index: -1;
-}
+  /*z-index: -1;
+}*/
 
 
 

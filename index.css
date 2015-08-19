@@ -86,8 +86,9 @@ nav li {
 
 .me{
   position: relative;
-  background: url("images/me_color.jpg") no-repeat; 
-    background-position: 30% 90%;
+  background: url("images/me_grey3.jpg") no-repeat; 
+    /*background-position: 30% 90%;*/
+    background-position: 30% 60%;
  background-size: cover;
     display: block;
  padding-top: 50%;

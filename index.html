@@ -85,11 +85,13 @@
 			  data.addColumn({type: 'string', role: 'tooltip'});
 			  data.addColumn('number', 'Course4');
 			  data.addColumn({type: 'string', role: 'tooltip'});
+			  data.addColumn('number', 'Course5');
+			  data.addColumn({type: 'string', role: 'tooltip'});
 
 			  data.addRows([
-			    ['Computer Science', 1, "Data Structures \n Spring '15", 1,  "Human Computer Interaction \n Spring '15", 1, "Algorithms \n Summer '15", 0, ""],
-			    ['Math', 1, "Multivariable Calculus \n Spring '14", 1, "Linear Algebra \n Fall '15", 1, "Probability and Statistics \n Fall '15", 1, "Graph Theory \n Spring '15"],
-			    ['Other', 1, "Microeconomics \n Fall '13", 1, "Macroeconomics \n Spring '14", 0, "", 0, ""]
+			    ['Computer Science', 1, "Data Structures \n Spring '15", 1,  "Human Computer Interaction \n Spring '15", 1, "Computer Networks \n Fall '15", 1, "Algorithms \n Fall '15", 1, "Machine Organization \n Fall '15"],
+			    ['Math', 1, "Multivariable Calculus \n Spring '14", 1, "Linear Algebra \n Fall '15", 1, "Probability and Statistics \n Fall '15", 1, "Graph Theory \n Spring '15", 0, ""],
+			    ['Other', 1, "Microeconomics \n Fall '13", 1, "Macroeconomics \n Spring '14", 0, "", 0, "", 0, ""]
 			  ]);
 
 			  // Create and draw the visualization.
@@ -102,7 +104,10 @@
 			        colors: ['#c6cffe','#a1b0fe','#7b91fd','#5571fd'],
 			        width:600, height:400,
 			        vAxis: {title: ""},
-			        hAxis: {title: "Number of Courses"}}
+			        hAxis: {
+			        	title: "Number of Courses",
+			        	ticks: [1,2,3,4,5]
+			        }}
 			      );
 				chart.draw(data, options);
 				}    
@@ -260,10 +265,12 @@
 				<a href="https://github.com/afoun7" target="_blank"><img class ="contact_img" src="images/git.png" style="height:80px;width:80px;padding-top:10px;"></a>
 
 				<a href="mailto:afoun7@gmail.com"><img class ="contact_img" src="images/email.png" style="height:100px;width:100px;padding-right:0px;"></a>
-		
-				<a href="https://medium.com/@afoun7" target="_blank"><img class ="contact_img" src="images/medium.png" style="height:83px;width:83px;padding-top:7px;padding-right:5px;"></a>
 
 				<a href="https://www.linkedin.com/in/amandafoun" target="_blank"><img class ="contact_img" src="images/linkedin.png" style="height:95px;width:95px;padding-top:1px;"></a>
+		
+				<!--<a href="https://medium.com/@afoun7" target="_blank"><img class ="contact_img" src="images/medium.png" style="height:83px;width:83px;padding-top:7px;padding-right:5px;"></a>
+
+				<a href="https://www.linkedin.com/in/amandafoun" target="_blank"><img class ="contact_img" src="images/linkedin.png" style="height:95px;width:95px;padding-top:1px;"></a> -->
 
 			</div> <!--contact-->
 

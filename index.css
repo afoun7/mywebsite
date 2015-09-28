@@ -65,28 +65,10 @@ nav li {
     display: inline;
 }
 
-/*.index {
-    position: relative;
-   /* background: url("images/me3_edit2.jpg") no-repeat; /*center fixed;*/
-   /* background: url("images/me_color.jpg") no-repeat; 
-    background-position: 30% 90%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    margin-top: 20px;
-    display: block;
-    display:block;*/
-    /*text-align: center; CENTERED TEXT */
- /* padding-top: 40%;
-    line-height: 90%; /* minimizes space between h1 and h2 */
-   /* padding-bottom: 20px;
- /* min-height: auto; /*470px set min height of main image of Amanda */
-   /* margin: 0 auto;
-}*/
 
 .me{
   position: relative;
-  background: url("images/me_grey3.jpg") no-repeat; 
+  background: url("images/bokeh.jpg") no-repeat; 
     /*background-position: 30% 90%;*/
     background-position: 30% 60%;
  background-size: cover;
@@ -122,9 +104,9 @@ nav li {
   width: -moz-max-content;    /* Firefox/Gecko */
   width: -webkit-max-content; /* Chrome */ 
   line-height: 1em; /* minimizes space between h1 and h2 */
-  margin-left: 8%;
-  margin-right: 50%;
-  top:35%; /*shifts box down*/
+  margin-left: 29%;
+  margin-right: 30%;
+  top:65%; /*shifts box down*/
   background: rgba(0, 0, 0, 0.7); 
   border: 1px solid black;
   opacity:1;

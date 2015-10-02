@@ -78,6 +78,9 @@ nav li {
 }
 
 .me{
+  content:url("images/circleme.png");
+  height: 400px;
+  width:400px;
   position: absolute;
   display: block;
   padding-left: 36%;

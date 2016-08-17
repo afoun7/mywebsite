@@ -36,11 +36,11 @@
 		        // A column for custom tooltip content
 		        dataTable.addColumn({type: 'string', role: 'tooltip'});
 		        dataTable.addRows([
-		          ['Python', 85,'Very Proficient'],
+		          ['Python', 90,'Very Proficient'],
 		          ['Java', 90, ' Very Proficient'],
-		          ['R', 30, 'Beginner'],
+		          ['AngularJS', 60, 'Familiar'],
 		          ['HTML', 80, 'Proficient'],
-		          ['Javascript', 60, 'Familiar'],
+		          ['Javascript', 80, 'Proficient'],
 		          ['CSS', 80, 'Proficient'],
 		          
 		        ]);
@@ -87,11 +87,15 @@
 			  data.addColumn({type: 'string', role: 'tooltip'});
 			  data.addColumn('number', 'Course5');
 			  data.addColumn({type: 'string', role: 'tooltip'});
+			  data.addColumn('number', 'Course6');
+			  data.addColumn({type: 'string', role: 'tooltip'});
+			  data.addColumn('number', 'Course7');
+			  data.addColumn({type: 'string', role: 'tooltip'});
 
 			  data.addRows([
-			    ['Computer Science', 1, "Data Structures \n Spring '15", 1,  "Human Computer Interaction \n Spring '15", 1, "Computer Networks \n Fall '15", 1, "Algorithms \n Fall '15", 1, "Machine Organization \n Fall '15"],
-			    ['Math', 1, "Multivariable Calculus \n Spring '14", 1, "Linear Algebra \n Fall '15", 1, "Probability and Statistics \n Fall '15", 1, "Graph Theory \n Spring '15", 0, ""],
-			    ['Other', 1, "Microeconomics \n Fall '13", 1, "Macroeconomics \n Spring '14", 0, "", 0, "", 0, ""]
+			    ['Computer Science', 1, "Data Structures \n Spring '15", 1,  "Human Computer Interaction \n Spring '15", 1, "Computer Networks \n Fall '15", 1, "Algorithms \n Fall '15", 1, "Machine Organization \n Fall '15", 1, "Computer Security \n Spring '16", 1, "Natural Language Processing \n Spring '16"],
+			    ['Math', 1, "Multivariable Calculus \n Spring '14", 1, "Linear Algebra \n Fall '15", 1, "Probability and Statistics \n Fall '15", 1, "Graph Theory \n Spring '15", 0, "", 0, "", 0, ""],
+			    ['Other', 1, "Microeconomics \n Fall '13", 1, "Macroeconomics \n Spring '14", 0, "", 0, "", 0, "", 0, "", 0, ""]
 			  ]);
 
 			  // Create and draw the visualization.
